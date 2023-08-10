@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    height: 100%;
+    z-index: -1;
+}
+
+.background{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-40px) scale(5.2);
+    
+}
+
+.c {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-20px) scale(2);
+    margin-right: 200%;
+    margin-top: 50%;
+    width: 20%
+
+}
+
+.cp {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-10px) scale(0.5);
+    margin-left: 140%;
+    margin-top: 40%;
+    width: 50%
+}
+.html {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-5px) scale(0.4);
+    margin-top: 20%;
+    margin-left: 50%;
+    width: 50%
+}
+
+.java {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-5px) scale(0.36);
+    margin-top: 40%;
+    margin-right: 50%;
+    width: 50%
+}
+
+.python {
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    transform: translateZ(-15px) scale(0.6);
+    margin-top: 40%;
+    width: 50%
+}
+
+.heading {
+    font-size: 100px;
+    color: white;
+    text-shadow: 5px 0px 10px white;
+    margin-bottom: 22%;
+    letter-spacing: 5px;
+}
+
+section {
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+
+}
+
+.bg1 {
+    background-image: url(back1.jpg);
+}
+
+.bg2 {
+    background-image:url(back2.jpg);
+}
+
+.bg3 {
+    background-image:url(back3.jpg);
+}
+
+.bg4 {
+    background-image:url(back4.jpg);
+}
+
+.bg5 {
+    background-image:url(back5.jpg);
+}
+
+.subhead {
+    font-size: 4rem;
+    padding: 0 8rem;;
+}
+
+.text {
+    font-size: 1.4rem;
+    padding: 0 8rem;
+    margin: 5rem 0;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+}
+
+.desc {
+    position: absolute;
+    background-color: white;
+    padding: 0.5rem 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: black;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
